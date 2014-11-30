@@ -1,8 +1,3 @@
-#class CreditCard < ActiveRecord::Base
-#  belongs_to :customer
-#  has_many :orders
-#  validates :number, :cvv, :expiration_month, :expiration_year, :firstname, :lastname, presence: true
-#end
 FactoryGirl.define do
   factory :credit_card do
     customer { FactoryGirl.create(:customer) }

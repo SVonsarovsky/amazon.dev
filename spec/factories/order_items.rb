@@ -3,6 +3,6 @@ FactoryGirl.define do
     book { FactoryGirl.create(:book) }
     order { FactoryGirl.create(:order) }
     price { Faker::Commerce.price }
-    quantity { Faker::Number.number(2) }
+    quantity { rand(1..9) }
   end
 end
